@@ -18,3 +18,6 @@ def transform_callback():
         print(f"trans {trans}")
     except TransformException as ex:
         print(f"could not get transform from P to B: {ex}") 
+
+node.create_timer(1, transform_callback)
+rclpy.spin(node)
