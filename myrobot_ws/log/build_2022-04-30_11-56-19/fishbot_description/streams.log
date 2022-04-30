@@ -1,0 +1,46 @@
+[0.336s] Invoking command in '/home/ubuntu/learn-ros2/myrobot_ws/src/fishbot_description': PYTHONPATH=/home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/fishbot_description build --build-base /home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/build install --prefix /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description --record /home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/install.log --single-version-externally-managed
+[0.434s] running egg_info
+[0.434s] creating ../../build/fishbot_description/fishbot_description.egg-info
+[0.434s] writing ../../build/fishbot_description/fishbot_description.egg-info/PKG-INFO
+[0.435s] writing dependency_links to ../../build/fishbot_description/fishbot_description.egg-info/dependency_links.txt
+[0.435s] writing entry points to ../../build/fishbot_description/fishbot_description.egg-info/entry_points.txt
+[0.435s] writing requirements to ../../build/fishbot_description/fishbot_description.egg-info/requires.txt
+[0.435s] writing top-level names to ../../build/fishbot_description/fishbot_description.egg-info/top_level.txt
+[0.436s] writing manifest file '../../build/fishbot_description/fishbot_description.egg-info/SOURCES.txt'
+[0.453s] reading manifest file '../../build/fishbot_description/fishbot_description.egg-info/SOURCES.txt'
+[0.453s] writing manifest file '../../build/fishbot_description/fishbot_description.egg-info/SOURCES.txt'
+[0.454s] running build
+[0.454s] running build_py
+[0.454s] creating /home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/build
+[0.454s] creating /home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/build/lib
+[0.454s] creating /home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/build/lib/fishbot_description
+[0.454s] copying fishbot_description/rotate_wheel.py -> /home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/build/lib/fishbot_description
+[0.454s] copying fishbot_description/__init__.py -> /home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/build/lib/fishbot_description
+[0.454s] running install
+[0.454s] running install_lib
+[0.455s] creating /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/lib/python3.8/site-packages/fishbot_description
+[0.455s] copying /home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/build/lib/fishbot_description/rotate_wheel.py -> /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/lib/python3.8/site-packages/fishbot_description
+[0.455s] copying /home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/build/lib/fishbot_description/__init__.py -> /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/lib/python3.8/site-packages/fishbot_description
+[0.455s] byte-compiling /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/lib/python3.8/site-packages/fishbot_description/rotate_wheel.py to rotate_wheel.cpython-38.pyc
+[0.456s] byte-compiling /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/lib/python3.8/site-packages/fishbot_description/__init__.py to __init__.cpython-38.pyc
+[0.456s] running install_data
+[0.456s] creating /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/ament_index
+[0.457s] creating /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/ament_index/resource_index
+[0.457s] creating /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/ament_index/resource_index/packages
+[0.457s] copying resource/fishbot_description -> /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/ament_index/resource_index/packages
+[0.457s] copying package.xml -> /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/fishbot_description
+[0.457s] creating /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/fishbot_description/launch
+[0.457s] copying launch/display_rviz2.launch.py -> /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/fishbot_description/launch
+[0.457s] copying launch/gazebo.launch.py -> /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/fishbot_description/launch
+[0.457s] creating /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/fishbot_description/urdf
+[0.457s] copying urdf/fishbot_gazebo.urdf -> /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/fishbot_description/urdf
+[0.457s] copying urdf/fishbot_base.urdf -> /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/fishbot_description/urdf
+[0.457s] creating /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/fishbot_description/world
+[0.457s] copying world/fish.world -> /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/fishbot_description/world
+[0.457s] copying world/fishbot.world -> /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/share/fishbot_description/world
+[0.457s] running install_egg_info
+[0.458s] Copying ../../build/fishbot_description/fishbot_description.egg-info to /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/lib/python3.8/site-packages/fishbot_description-0.0.0-py3.8.egg-info
+[0.459s] running install_scripts
+[0.467s] Installing rotate_wheel script to /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/lib/fishbot_description
+[0.467s] writing list of installed files to '/home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/install.log'
+[0.480s] Invoked command in '/home/ubuntu/learn-ros2/myrobot_ws/src/fishbot_description' returned '0': PYTHONPATH=/home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/fishbot_description build --build-base /home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/build install --prefix /home/ubuntu/learn-ros2/myrobot_ws/install/fishbot_description --record /home/ubuntu/learn-ros2/myrobot_ws/build/fishbot_description/install.log --single-version-externally-managed
