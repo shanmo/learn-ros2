@@ -4,7 +4,7 @@ from geometry_msgs.msg import TransformStamped
 from tf2_ros import TransformBroadcaster 
 
 rclpy.init()
-node = Node("transform_node")
+node = Node("transform_node1")
 tf_pub = TransformBroadcaster(node)
 
 t = TransformStamped() 
