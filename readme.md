@@ -18,3 +18,10 @@
     - use safari to enter `http://127.0.0.1:6080/`
     - need to solve permission issue https://www.cnblogs.com/feifanrensheng/p/15972259.html
         - `sudo chmod 777 -R ~/.ros/`
+
+## install 
+
+- `sudo apt install ros-$ROS_DISTRO-joint-state-publisher-gui ros-$ROS_DISTRO-robot-state-publisher`
+- `sudo apt install ros-foxy-gazebo-ros` 
+
+
