@@ -32,7 +32,8 @@ endif()
 
 ament_package()
 
-add_executable(billy_node src/billy.cpp)
+# add_executable(billy_node src/billy.cpp)
+add_executable(billy_node src/billy_oop.cpp)
 ament_target_dependencies(billy_node rclcpp)
 
 install(TARGETS
