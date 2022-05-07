@@ -2,29 +2,29 @@ use futures::executor::LocalPool;
 use futures::stream::StreamExt;
 use futures::task::LocalSpawnExt;
 use r2r::QosProfile;
+use futures::future;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let ctx = r2r::Context::create()?;
-    let mut node = r2r::Node::create(ctx, "sherlock_node", "")?;
-    let mut sub = node.subscribe::<r2r::std_msgs::msg::String>("/billy", QosProfile::default())?;
-    let p =
-        node.create_publisher::<r2r::std_msgs::msg::String>("/sherlock", QosProfile::default())?;
+    let mut node = r2r::Node::create(ctx, "sherlock", "")?;
+    let sub = node.subscribe::<r2r::std_msgs::msg::String>("/blog_feedback", QosProfile::default())?;
+    let p = node.create_publisher::<r2r::std_msgs::msg::String>("/clue", QosProfile::default())?;
+    println!("I am sherlock, elementary my dear watson");
 
     let mut pool = LocalPool::new();
     let spawner = pool.spawner();
 
     spawner.spawn_local(async move {
-        loop {
-            match sub.next().await {
-                Some(msg) => {
-                    p.publish(&r2r::std_msgs::msg::String {
-                        data: format!("sherlock: new msg: {}", msg.data),
-                    })
-                    .unwrap();
-                }
-                None => break,
-            }
-        }
+        sub.for_each(|msg| {
+            let my_str = "sherlock: new msg from BSI ".to_string() + &msg.data; 
+            p.publish(&r2r::std_msgs::msg::String {
+                data: my_str.clone(),
+            })
+            .unwrap();
+            println!("{}", my_str);
+            future::ready(())
+        })
+        .await
     })?;
 
     loop {
