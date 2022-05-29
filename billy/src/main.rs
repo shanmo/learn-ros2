@@ -4,10 +4,6 @@ use rclrust::{qos::QoSProfile, rclrust_info};
 use rclrust_msg::std_msgs::msg::String as String_;
 use rclrust_msg::std_msgs::msg::UInt8 as u8_;
 
-struct Billy {
-
-}
-
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     let ctx = rclrust::init()?;
